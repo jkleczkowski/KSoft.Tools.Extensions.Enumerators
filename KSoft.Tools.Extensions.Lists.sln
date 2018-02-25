@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27130.2036
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "KSoft.Tools.Extensions.Lists", "src\KSoft.Tools.Extensions.Lists.csproj", "{FC0A32A2-3B1F-4ADF-B298-31E472B5CBF2}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "KSoft.Tools.Extensions.Lists.Tests", "test\KSoft.Tools.Extensions.Lists.Tests.csproj", "{65FBCBA8-C68F-431B-B354-15B38C3341B5}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{FC0A32A2-3B1F-4ADF-B298-31E472B5CBF2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FC0A32A2-3B1F-4ADF-B298-31E472B5CBF2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FC0A32A2-3B1F-4ADF-B298-31E472B5CBF2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FC0A32A2-3B1F-4ADF-B298-31E472B5CBF2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{65FBCBA8-C68F-431B-B354-15B38C3341B5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{65FBCBA8-C68F-431B-B354-15B38C3341B5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{65FBCBA8-C68F-431B-B354-15B38C3341B5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{65FBCBA8-C68F-431B-B354-15B38C3341B5}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {D0CB3D50-BF7B-44ED-A2A6-23C588BD86C3}
+	EndGlobalSection
+EndGlobal
