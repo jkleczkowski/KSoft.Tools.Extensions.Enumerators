@@ -18,5 +18,9 @@ namespace KSoft.Tools.Extensions
     {
       foreach (var name in el) list.AddIfNotExists(name);
     }
+    public static void AddRangeIfNotExists<T>(this IList<T> list, params T[] elements)
+    {
+      foreach (var name in elements) list.AddIfNotExists(name);
+    }
   }
 }

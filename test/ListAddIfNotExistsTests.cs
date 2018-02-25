@@ -1,6 +1,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using KSoft.Tools.xUnit.Logger;
+using KSoft.Tools.Extensions;
 using Xunit;
 using Xunit.Abstractions;
 
@@ -21,7 +22,7 @@ namespace KSoft.Tools.Extensions.Lists.Tests
     [Fact]
     public void test_add_one_element_to_IList()
     {
-      IList<string> list = new List<string>()
+      List<string> list = new List<string>()
       {
         "Element A"
       };
@@ -29,17 +30,19 @@ namespace KSoft.Tools.Extensions.Lists.Tests
       list.Count.ShouldBe(2);
       logger.Info("success");
     }
+
     [Fact]
     public void test_multiple_elements_to_IList()
     {
-      IList<string> list = new List<string>()
+      List<string> list = new List<string>()
       {
         "Element A"
       };
-      list.AddRangeIfNotExists(new []{ "Element B" , "Element C" });
+      list.AddRangeIfNotExists(new[] {"Element B", "Element C"});
       list.Count.ShouldBe(3);
+      list.AddRangeIfNotExists("Element A", "Element D");
+      list.Count.ShouldBe(4);
       logger.Info("success");
     }
-
   }
 }
